@@ -149,7 +149,7 @@ do.
 
 ## Reconciliation sweep & idempotency
 
-`run_reconciliation_for_tenant()` (called hourly by Vercel Cron, see
+`run_reconciliation_for_tenant()` (called by Vercel Cron, see
 `vercel.json` + `src/app/api/reconciliation/route.ts`) checks, per tenant:
 
 - **Low stock**: any `stock_levels` row under its product's
